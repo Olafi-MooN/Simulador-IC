@@ -1,12 +1,9 @@
-/* Colors 
---- Primary #18D6CA
---- White #FCFCFC
---- Real White #FFFFFF
---- Dak #3A3A3A
---- grey #707070
-*/
-
-
+:root{
+    --color-blue: #18D6CA;
+    --color-white:#FCFCFC;
+    --color-black: #3A3A3A;
+    --color-grey:#707070;
+}
 
 /* Geral */
 
@@ -16,6 +13,226 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2F2;
 }
+
+.btn:hover {
+    background-color: #10b9ae;
+    border-color: #10b9ae;
+    color: #FCFCFC;
+}
+
+
+/*
+
+******************************* Get Starting **************************************
+
+*/
+
+/*Header*/
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #3A3A3AC2 0%, #434343A1 18%, #4A4A4A7A 33%, #62626242 64%, #B5B5B500 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+.logo-header {
+    margin: 0px 0 0px 24px;
+    color: #F2F2F2;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.btn-entrar-header {
+    margin: 15px 24px 0 0;
+    border-radius: 20px;
+    padding: 8px 22px 8px 22px;
+
+}
+
+/* Container - 0 (Wellcome text and principal image) */
+
+.container-0 {
+    background-color: #18D6CA;
+    padding: 0 0 40px 0;
+    box-shadow: 6px 6px 10px #00000029;
+}
+
+.container-0-text {
+    height: 360px;
+    width: 500px;
+    margin: 100px 20px 20px 80px;
+    color: #FCFCFC;
+    font-weight: 500;
+}
+
+.title-0 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.image-0 {
+    height: 600px;
+}
+
+/* Container-ca (Create account and text) */
+
+.container-ca{
+    position: relative;
+    top: -60px;
+}
+
+.box-ca {
+    width: 520px;
+    height: 590px;
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 10px #00000029;
+    border-radius: 43px;
+}
+
+.title-box-ca {
+    text-align: center;
+    color: #18D6CA;
+    font-size: 22px;
+    padding-top: 35px;
+}
+
+.subtitle-box-ca {
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 18px;
+}
+
+.btn-ca {
+    width: 130px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #18D6CA;
+    border-color: #18D6CA;
+}
+
+.form-control {
+    border-radius: 100px;
+    width: 300px;
+}
+
+.form-text {
+    font-size: 13px;
+}
+
+.login-ca {
+    color: #18D6CA;
+    padding-top: 15px;
+}
+
+/*Text ca*/
+
+.container-text-ca {
+    margin: 200px 0 0 0;
+    padding-left: 7%;
+}
+
+.title-text-ca {
+    text-align: left;
+    font-size: 26px;
+    color: #18D6CA;
+    font-weight: 700;
+}
+
+.text-ca {
+    font-size: 18px;
+    color: #3A3A3A;
+    font-weight: 500;
+}
+
+/*body text one column*/
+
+.container-text-one {
+    margin: 4% 0 0 0;
+    padding: 0 5%;
+}
+
+.title-text-one {
+    text-align: center;
+    font-size: 26px;
+    color: #18D6CA;
+    font-weight: 700;
+}
+
+.text-one {
+    text-align: center;
+    font-size: 18px;
+    color: #3A3A3A;
+    font-weight: 500;
+}
+
+/*body text two column*/
+
+.container-text-two{
+    margin-top: 4%;
+}
+
+.container-text-two-0 {
+    padding: 2% 5% 2% 5%;
+}
+
+.container-text-two-1 {
+    padding: 2% 5% 2% 5%;
+}
+
+.title-text-two {
+    text-align: start;
+    font-size: 26px;
+    color: #18D6CA;
+    font-weight: 700;
+}
+
+.text-two {
+    text-align: start;
+    font-size: 18px;
+    color: #3A3A3A;
+    font-weight: 500;
+}
+
+/* paragraph create account */
+
+.container-paragraph-ca{
+    margin-top: 0px;
+    top: 0;
+}
+
+.paragraph-ca-title{
+    color: #3A3A3A;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 600;
+}
+
+.btn-paragraph-ca{
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    background-color: #18D6CA;
+    border-color: #18D6CA;
+    border-radius: 100px;
+    margin-bottom: 80px;
+    margin-top: 45px;
+
+}
+
+
+/*
+
+******************************* Home Page **************************************
+
+*/
+
 
 /* Navbar*/
 
@@ -31,6 +248,10 @@ body {
     border-color: #FCFCFC;
     color: #FCFCFC;
     margin-right: 100px;
+}
+
+.search-imput{
+    border-color: #FCFCFC;
 }
 
 #search:hover {
@@ -152,204 +373,4 @@ body {
     background-color: #3A3A3A;
 }
 
-/*Pagida de Inicio*/
-
-/*Header*/
-
-.header-start {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: transparent linear-gradient(180deg, #3A3A3AC2 0%, #434343A1 18%, #4A4A4A7A 33%, #62626242 64%, #B5B5B500 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-
-.logo-start {
-    margin: 0px 0 0px 24px;
-    color: #F2F2F2;
-    font-size: 20px;
-    font-weight: 500;
-
-}
-
-.btn-entrar {
-    margin: 15px 24px 0 0;
-    border-radius: 20px;
-    padding: 8px 22px 8px 22px;
-
-}
-
-/*texto boas vindas*/
-
-.container-principal {
-    background-color: #18D6CA;
-    padding: 0 0 40px 0;
-    box-shadow: 6px 6px 10px #00000029;
-}
-
-.main-image-inicio {
-    height: 600px;
-}
-
-.title-inicio {
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.container-text-inicio {
-    height: 360px;
-    width: 500px;
-    margin: 100px 20px 20px 80px;
-    color: #FCFCFC;
-    font-weight: 500;
-}
-
-/*Container grandão*/
-
-.container-geral{
-    height: 1850px;
-}
-
-/*rows*/
-
-.subcontainer-1{ /*cadastro e texto 1*/
-    padding: 90px;
-    position: relative;
-    top: -130px;
-}
-
-.subcontainer-2{ /*texto 2 e foto 1*/
-    padding: 90px;
-    position: relative;
-    top: -300px;
-}
-
-.subcontainer-3{
-    padding: 90px;
-    position: relative;
-    top: -500px;
-}
-
-/*Create account*/
-
-.container-ca {
-    width: 520px;
-    height: 590px;
-    background: #FCFCFC 0% 0% no-repeat padding-box;
-    box-shadow: 6px 6px 10px #00000029;
-    border-radius: 43px;
-    margin: 0 10% 0 0;
-}
-
-.title-ca {
-    text-align: center;
-    color: #18D6CA;
-    font-size: 22px;
-    padding-top: 35px;
-}
-
-.subtitle-ca {
-    text-align: center;
-    color: #3A3A3A;
-    font-size: 18px;
-}
-
-.btn-ca {
-    width: 130px;
-    height: 45px;
-    border-radius: 30px;
-    background-color: #18D6CA;
-    border-color: #18D6CA;
-}
-
-.btn:hover {
-    background-color: #10b9ae;
-    border-color: #10b9ae;
-}
-
-.form-control {
-    border-radius: 100px;
-    width: 300px;
-}
-
-.form-text {
-    font-size: 13px;
-}
-
-.login-ca {
-    color: #18D6CA;
-    padding-top: 15px;
-}
-
-/*Texto 1 - t1*/
-
-.container-t1 {
-    width: 520px;
-    margin: 200px 0 0 10%;
-}
-
-.title-t1 {
-    text-align: left;
-    font-size: 26px;
-    color: #18D6CA;
-    font-weight: 700;
-}
-
-.text-t1 {
-    font-size: 18px;
-    color: #3A3A3A;
-    font-weight: 500;
-}
-
-/*texto 2 - t2*/
-
-.container-t2 {
-    width: 520px;
-    margin: 200px 10% 0 0;
-}
-
-/*img casos*/
-
-.img-casos {
-    height: 40rem;
-    margin: 0 0 0 10%;
-
-}
-
-/*texto 3 - t3*/
-
-.container-t3 {
-    width: 520px;
-    margin: 200px 0 0 10%;
-}
-
-/*img executar ação*/
-
-.img-acao {
-    height: 40rem;
-    margin: 0 10% 0 0;
-
-}
-
-.chamada-title{
-    color: #3A3A3A;
-    font-size: 26px;
-    text-align: center;
-    margin-top: 45px;
-    font-weight: 600;
-}
-
-.btn-ca2{
-    width: 150px;
-    height: 45px;
-    text-align: center;
-    background-color: #18D6CA;
-    border-color: #18D6CA;
-    border-radius: 100px;
-    margin-bottom: 80px;
-    margin-top: 45px;
-
-}
+/*The Cake is a Lie*/

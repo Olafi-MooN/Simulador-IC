@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <header class="header-start d-flex justify-content-between align-items-center">
-        <p class="logo-start">Logo Here</p>
-        <button type="button" class="btn btn-light btn-entrar">Entrar</button>
+    <header class="header d-flex justify-content-between align-items-center">
+        <p class="logo-header">Logo Here</p>
+        <button type="button" class="btn btn-light btn-entrar-header">Entrar</button>
     </header>
-    <div class="container-principal d-flex justify-content-between">
-        <div class="container-text-inicio">
-            <p class="title-inicio">Simulador - IC</p>
-            <p class="text-inicio">
+    <div class="container-0 d-flex justify-content-between">
+        <div class="container-0-text">
+            <p class="title-0">Simulador - IC</p>
+            <p class="">
                 Proin volutpat, ex eu euismod pharetra, quam risus consequat libero, sit amet bibendum ipsum velit
                 vitae
                 ipsum.
@@ -39,16 +39,14 @@
                 pellentesque, enim erat tincidunt enim, vel consectetur nibh ipsum id mi.
             </p>
         </div>
-        <img src="img/10130.png" class="main-image-inicio" alt="">
+        <img src="img/10130.png" class="image-0" alt="">
     </div>
 
     <!--Create account-->
-
-    <div class="container-geral">
-        <div class="subcontainer-1 d-flex justify-content-center">
-            <div class="container-ca">
-                <p class="title-ca">Simulador - IC</p>
-                <p class="subtitle-ca">Crie uma conta usando seu e-mail:</p>
+        <div class="container-ca row d-flex justify-content-center">
+            <div class="box-ca col-12 col-md-6">
+                <p class="title-box-ca">Simulador - IC</p>
+                <p class="subtitle-box-ca">Crie uma conta usando seu e-mail:</p>
                 <form class="form-ca d-flex flex-column align-items-center">
                     <div class="mb-3">
                         <label for="username" class="form-label">Nome de usuario</label>
@@ -72,45 +70,85 @@
                     <a class="login-ca" href="#">Já possuo uma conta!</a>
                 </form>
             </div>
-            <div class="container-t1">
-                <p class="title-t1">Lorem ipsum dolor</p>
-                <p class="text-t1">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+            <div class="container-text-ca col-12 col-md-6">
+                <p class="title-text-ca">Lorem ipsum dolor</p>
+                <p class="text-ca">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
                     consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
                     tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.</p>
-            </div>
-        </div>
-        <div class="subcontainer-2 d-flex justify-content-center">
-            <div class="container-t2">
-                <p class="title-t1">Lorem ipsum dolor</p>
-                <p class="text-t1">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+                    tempus.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
                     consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
                     tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.</p>
+                    tempus.
+                </p>
             </div>
-            <img src="img/casos.png" class="img-casos" alt="">
         </div>
-        <div class="subcontainer-3 d-flex justify-content-center">
-            <img src="img/casos – 1.png" class="img-acao" alt="">
-            <div class="container-t3">
-                <p class="title-t1">Lorem ipsum dolor</p>
-                <p class="text-t1">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+
+        <!-- body text one column-->
+        <div class="container-text-one d-flex justify-content-center">
+            <div class="container-t2 ">
+                <p class="title-text-one">Lorem ipsum dolor</p>
+                <p class="text-one">Aenean fermentum urna sapien, hendrerit interdum velit egestas quis. Nullam ut justo
+                    sed nibh imperdiet fermentum sed sed tortor.
+                    <br><br>
+                    Etiam aliquet facilisis luctus. Praesent ac semper tellus. Proin efficitur sed lacus a malesuada.
+                    Integer sed laoreet neque. In in erat imperdiet, viverra nisl in, feugiat dui. Nam aliquam augue mi,
+                    tristique malesuada metus imperdiet ut. Vivamus aliquet eros lacus, hendrerit luctus ligula mattis
+                    sit
+                    amet. Fusce ultricies auctor nisi, eget
+                    <br><br>
+                    Ut in accumsan nibh, ac interdum massa. Phasellus et viverra justo. Aliquam vitae eleifend velit.
+                    <br><br>
+                    Mauris non pretium odio. Vivamus semper, lectus et tempus laoreet, libero nisl lacinia velit, ut
+                    venenatis ipsum leo quis nisl. Ut in accumsan nibh, ac interdum massa. Phasellus et viverra justo.
+                    Aliquam vitae eleifend velit.Mauris non pretium odio. Vivamus semper, lectus et tempus laoreet,
+                    libero nisl lacinia velit, ut venenatis ipsum leo quis nisl. Ut in accumsan nibh, ac interdum massa.
+                    Phasellus et viverra justo. Aliquam vitae eleifend velit.
+                    <br><br>
+                    Mauris non pretium odio. Vivamus semper, lectus et tempus laoreet, libero nisl lacinia velit, ut
+                    venenatis ipsum leo quis nisl. Ut in accumsan nibh, ac interdum massa. Phasellus et viverra justo.
+                    Aliquam vitae eleifend velit.
+                </p>
+            </div>
+        </div>
+
+        <!-- body text two column -->
+        <div class="container-text-two row d-flex align-items-center justify-content-center gx-0">
+            <div class="container-text-two-0 col-12 col-md-6">
+                <p class="title-text-two">Lorem ipsum dolor</p>
+                <p class="text-two">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
                     consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
                     tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.</p>
+                    tempus.
+                    <br><br>
+                    Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
+                    magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
+                    odio.
+                </p>
+            </div>
+            <div class="container-text-two-1 col-1 col-12 col-md-6">
+                <p class="title-text-two">Lorem ipsum dolor</p>
+                <p class="text-two">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+                    consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
+                    tincidunt augue. In molestie velit vel lorem convallis
+                    tempus.
+                    <br><br>
+                    Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
+                    magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
+                    odio.
+                </p>
             </div>
         </div>
-    </div>
-    <div class="container-ca2 d-flex align-items-center flex-column">
-    <p class="chamada-title">Esta esperando o que? Crie sua conta agora mesmo!</p>
-    <button type="button" class="btn btn-primary btn-ca2">Criar conta</button>
-    <footer class="footer">
-    </footer>
-    </div>
+        <div class="container-paragraph-ca d-flex align-items-center flex-column">
+            <p class="paragraph-ca-title">Esta esperando o que? Crie sua conta agora mesmo!</p>
+            <button type="button" class="btn btn-primary btn-paragraph-ca">Criar conta</button>
+        </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
