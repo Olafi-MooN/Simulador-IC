@@ -59,7 +59,7 @@ const Quiz = () => {
                 <h2 className="title">Dados do Paciente</h2>
                 <div className="content d-flex justify-content-between align-items-center">
                     <div className="img-text d-flex align-items-center">
-                        <img className="card-img" src="img/temperature1.png" alt="#"/>
+                        <img className="card-img" src="/img/temperature1.png" alt="#"/>
                         <div className="text">
                             <h4 id="name"><span className="span">Nome: </span>José da Silva Pereira</h4>
                             <h4 id="complaint"><span className="span">Queixa principal: </span>Estou com dor nas costas</h4>
@@ -80,7 +80,7 @@ const Quiz = () => {
                 <h2 className="title">Resumo do Caso</h2>
                 <div className="content d-flex justify-content-start align-items-center">
                     <div className="img-text d-flex align-items-center">
-                        <img className="card-img" src="img/report.png" alt="#"/>
+                        <img className="card-img" src="/img/report.png" alt="#"/>
                         <div className="text">
                             <h4 id="description"><span className="span">Descrição: </span>Homem agricultor, vem a UBS
                                 desacompanhado, queixando-se de dor nas
@@ -96,7 +96,7 @@ const Quiz = () => {
                 <h2 className="title">Monitorização</h2>
                 <div className="content d-flex justify-content-start align-items-center">
                     <div className="img-text d-flex align-items-center">
-                        <img className="card-img" src="img/symptoms.png" alt="#"/>
+                        <img className="card-img" src="/img/symptoms.png" alt="#"/>
                         <div className="text">
                             <h4 id="temperature"><span className="span">Temperatura: </span>Ainda não aferido</h4>
                             <h4 id="pressure"><span className="span">Pressão: </span>Ainda não aferido</h4>
@@ -110,7 +110,7 @@ const Quiz = () => {
                 <h2 className="title">Historico do Paciente</h2>
                 <div className="content d-flex justify-content-start align-items-center">
                     <div className="img-text d-flex align-items-center">
-                        <img className="card-img" src="img/temperature2.png" alt="#"/>
+                        <img className="card-img" src="/img/temperature2.png" alt="#"/>
                         <div className="text">
                             <h4 id="temperature"><span className="span">Historico: </span>Desenvolvendo historico</h4>
                         </div>

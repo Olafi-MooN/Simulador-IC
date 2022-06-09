@@ -1,6 +1,11 @@
 import React from 'react';
+import { CaseCards, ICaseCardsModel } from '../../Components/CaseCards';
 
 const Home = () => { 
+  const casosList: ICaseCardsModel[] = [
+    {id: 1, description: 'Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.', title: 'Doutor(a), estou com muita dor nas costas', scenery: 'Cenário: Unidade básica de saúde.'}
+  ];
+
   return <>
     <header>
     <nav className="navbar navbar-dark navbar-expand-lg">
@@ -47,79 +52,7 @@ const Home = () => {
 
       {/* <!-- casos --> */}
       <div className="col-12 col-xl-7 main-home-cow">
-        <div className="card-caso d-flex justify-content-between">
-          <img src="img/img-caso.png" alt="" className="image-caso"/>
-          <div className="info-caso d-flex flex-column justify-content-start align-self-center">
-            <h3 className="title-caso">
-              "Doutor(a), estou com muita dor nas costas"
-            </h3>
-            <h4 className="text-caso">
-              Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.
-            </h4>
-            <h6 className="text-caso-1">
-              Cenário: Unidade básica de saúde.
-            </h6>
-          </div>
-          <a href="#" className="select-caso d-flex justify-content-center align-items-center flex-column">
-            <i className="bi bi-arrow-right-circle-fill icon-enter-caso"></i>
-            <p className="text-enter-caso">Entrar</p>
-          </a>
-        </div>
-
-        <div className="card-caso d-flex justify-content-between">
-          <img src="img/img-caso.png" alt="" className="image-caso"/>
-          <div className="info-caso">
-            <h5 className="title-caso">
-              "Doutor(a), estou com muita dor nas costas"
-            </h5>
-            <h6 className="text-caso">
-              Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.
-            </h6>
-            <h6 className="text-caso-1">
-              Cenário: Unidade básica de saúde.
-            </h6>
-          </div>
-          <a href="#" className="select-caso d-flex justify-content-center align-items-center flex-column">
-            <i className="bi bi-arrow-right-circle-fill icon-enter-caso"></i>
-            <p className="text-enter-caso">Entrar</p>
-          </a>
-        </div>
-        <div className="card-caso d-flex justify-content-between">
-          <img src="img/img-caso.png" alt="" className="image-caso"/>
-          <div className="info-caso">
-            <h5 className="title-caso">
-              "Doutor(a), estou com muita dor nas costas"
-            </h5>
-            <h6 className="text-caso">
-              Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.
-            </h6>
-            <h6 className="text-caso-1">
-              Cenário: Unidade básica de saúde.
-            </h6>
-          </div>
-          <a href="#" className="select-caso d-flex justify-content-center align-items-center flex-column">
-            <i className="bi bi-arrow-right-circle-fill icon-enter-caso"></i>
-            <p className="text-enter-caso">Entrar</p>
-          </a>
-        </div>
-        <div className="card-caso d-flex justify-content-between">
-          <img src="img/img-caso.png" alt="" className="image-caso"/>
-          <div className="info-caso">
-            <h5 className="title-caso">
-              "Doutor(a), estou com muita dor nas costas"
-            </h5>
-            <h6 className="text-caso">
-              Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.
-            </h6>
-            <h6 className="text-caso-1">
-              Cenário: Unidade básica de saúde.
-            </h6>
-          </div>
-          <a href="#" className="select-caso d-flex justify-content-center align-items-center flex-column">
-            <i className="bi bi-arrow-right-circle-fill icon-enter-caso"></i>
-            <p className="text-enter-caso">Entrar</p>
-          </a>
-        </div>
+        {casosList.map(item =>  <CaseCards description={item.description} id={item.id} scenery={item.scenery} title={item.title} key={item.id}/> )}
       </div>
 
       {/* <!-- Espaço entre colunas --> */}
