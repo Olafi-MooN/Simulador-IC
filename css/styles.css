@@ -67,26 +67,32 @@ h4 {
     opacity: 1;
 }
 
+.navbar-nav{
+    padding-left: 14px;
+}
+
 /*-------------------------------- home page ------------------------------------*/
 
 /*title*/
 
-.main-title {
-    padding: 35px 0px 30px 0;
-    display: flex;
-    justify-content: center;
-    color: #3A3A3A;
+.home-title{
+    text-align: center;
+    padding: 40px;
 }
 
 /*Body*/
+
+.main-home-cow{
+    padding: 0 30px 0 30px;
+}
 
 .casos {
     margin: 10px;
 }
 
 .card-caso {
-    width: 720px;
-    height: 165px;
+    width: 100%;
+    height: 180px;
     background: #fff;
     border-radius: 32px;
     margin-bottom: 30px;
@@ -97,18 +103,15 @@ h4 {
 }
 
 .info-caso {
-    width: 500px;
     padding: 10px 10px 10px 10px;
 }
 
 .title-caso {
-    color: #3A3A3A;
-    padding: 7px 7px 10px 7px;
+    padding: 7px 7px 20px 7px;
     margin: 0;
 }
 
 .text-caso {
-    color: #3A3A3A;
     padding: 7px 7px 10px 7px;
     margin: 0;
 }
@@ -120,7 +123,7 @@ h4 {
 }
 
 .select-caso {
-    height: 165px;
+    height: 100%;
     width: 100px;
     background: #18D6CA;
     border-radius: 0px 32px 32px 0px;
@@ -169,14 +172,6 @@ h4 {
     padding: 0px 0px 4px 0px;
 }
 
-/*Footer*/
-
-.footer {
-    height: 400px;
-    width: 100%;
-    background-color: #3A3A3A;
-}
-
 /*The Cake is a Lie*/
 
 /*-------------------------------- quiz screen ----------------------------------*/
@@ -209,11 +204,15 @@ h4 {
 
 /* main-row */
 
+.main-quiz-row{
+    padding: 0 30px 0 30px;
+
+}
 
 /* cards */
 
 .card-main{
-    margin: 30px;
+    margin: 30px 0 30px 0;
     width: 100%;
     height: auto;
     background: white 0% 0% no-repeat padding-box;
@@ -302,3 +301,81 @@ h4 {
 #exame-img-correction{
     margin-top: 6px;
 }
+
+
+/*---------------------------------------Footer--------------------------------------------*/
+
+/* title and social icons */
+
+.footer {
+    height: 100%;
+    width: 100%;
+    background-color: #3A3A3A;
+    padding: 14px 0 20px 0;
+}
+
+.footer .container-top{
+    padding: 20px 30px;
+}
+
+.footer .container-top .title{
+    color: var(--color-white);
+}
+
+.footer .container-top .social-icons{
+    color: var(--color-white);
+    font-size: 24px;
+}
+
+.footer .container-top .social-icon{
+    margin: 0 4px;
+    color: var(--color-white);
+}
+
+.footer .container-top .social-icon:hover{
+    margin: 0 4px;
+    color: var(--color-blue-hover);
+}
+
+/* row content */
+
+.footer .row{
+    padding: 0 30px;
+}
+
+.footer .row .col-12{
+    padding: 6px 0px;
+}
+
+.footer .row .col-12 .col-title{
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.footer .row .col-12 .list-group .list-group-item{
+   background: none;
+   color: var(--color-white);
+   opacity: 0.7;
+   font-size: 15px;
+}
+
+.footer .row .col-12 .list-group .list-group-item:hover{
+    color: var(--color-blue-hover);
+ }
+
+ .container-our-team{
+    padding: 0;
+    margin: 0;
+ }
+
+ .list-group.our-team{
+   
+ }
+
+ /*Copyrigth*/
+
+ .copyright{
+     color: var(--color-white);
+     padding: 20px 0 0 0;
+     opacity: 0.7;
+ }
