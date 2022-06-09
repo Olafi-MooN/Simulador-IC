@@ -112,7 +112,7 @@ const LandingPage = () => {
         </div>
         {/* end body text one column */}
 
-        {/* <!-- body text two column --> */}
+        {/* body text two column */}
         <div className="container-text-two row d-flex align-items-center justify-content-center gx-0">
             <div className="container-text-two-0 col-12 col-md-6">
                 <p className="title-text-two">Lorem ipsum dolor</p>
@@ -141,12 +141,16 @@ const LandingPage = () => {
                 </p>
             </div>
         </div>
+        {/* end body text two column */}
+
+        {/* create account call */}
         <div className="container-paragraph-ca d-flex align-items-center flex-column">
             <p className="paragraph-ca-title">Esta esperando o que? Crie sua conta agora mesmo!</p>
             <button type="button" className="btn btn-primary btn-paragraph-ca">Criar conta</button>
         </div>
+        {/* end create account call */}
 
-        {/*Login popup*/}
+        {/*login popup*/}
         <div className="container-popup">
             <div className="box-login">
                 <a href="#" className="bi bi-x"></a>
@@ -167,6 +171,7 @@ const LandingPage = () => {
                 </form>
             </div>
         </div>
+        {/*end login popup*/}
     </>
 }
 
