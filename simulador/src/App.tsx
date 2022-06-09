@@ -11,9 +11,9 @@ function App() {
 
   return (
     <>
-    <Home/>,
+    {/* <Home/>, */}
     <LandingPage/>,
-    <Quiz />
+    {/* <Quiz /> */}
     </>
   )
 }
