@@ -15,6 +15,10 @@ body {
   background-color: #e6e6e6;
 }
 
+.container-md,.container-sm,.container-lg{
+  padding: 0;
+}
+
 .btn:hover {
   background-color: var(--color-blue-hover);
   border-color: var(--color-blue-hover);

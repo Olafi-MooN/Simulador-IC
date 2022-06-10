@@ -11,7 +11,7 @@ export interface ICaseCardsModel {
 const CaseCards: React.FC<ICaseCardsModel> = ({ description, id, scenery, title }) => {
   return (
     <>
-      <div className="card-caso d-flex justify-content-between" key={id}>
+      <div className="container-sm card-caso d-flex justify-content-between" key={id}>
         <div className="row gx-0 ">
           <div className="col-12 col-xl-3 d-flex justify-content-center align-items-center">
             <img src="img/heart.png" alt="" className="image" />
