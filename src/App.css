@@ -60,6 +60,12 @@ h4 {
   color: var(--color-white);
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 /*-------------------------------- landingpage ------------------------------------*/
 
@@ -476,7 +482,7 @@ height: 130px;
 
 /*-------------------------------- end home page ----------------------------------*/
 
-/*-------------------------------- quiz screen ----------------------------------*/
+/*-------------------------------- quiz page ----------------------------------*/
 
 /*main title and back btn*/
 
@@ -575,13 +581,15 @@ height: 130px;
   border: none;
 }
 
-.list-group-item .questions {
+.nav-item .questions {
   margin-top: 0;
   margin-bottom: .5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   font-size: 15px;
   color: var(--color-black);
+  width: auto;
+  padding: 5px 0;
 }
 
 .list-group-item .questions:hover {
@@ -605,7 +613,7 @@ height: 130px;
   margin-top: 6px;
 }
 
-/*-------------------------------- end quiz screen ----------------------------------*/
+/*-------------------------------- end quiz page ----------------------------------*/
 
 /*---------------------------------------footer--------------------------------------------*/
 
