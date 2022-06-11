@@ -30,7 +30,7 @@ const CaseCards: React.FC<ICaseCardsModel> = ({ description, id, scenery, title 
             </div>
           </div>
         </div>
-        <Link to={`quiz/${id}`} className="select-caso d-flex justify-content-center align-items-center flex-column">
+        <Link to={`/quiz/${id}`} className="select-caso d-flex justify-content-center align-items-center flex-column">
           <i className="bi bi-arrow-right-circle-fill icon-enter-caso"></i>
           <p className="text-enter-caso">Entrar</p>
         </Link>
