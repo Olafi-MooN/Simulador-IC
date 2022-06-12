@@ -675,8 +675,6 @@ height: 130px;
   margin: 0;
 }
 
-.list-group.our-team {}
-
 /*Copyrigth*/
 
 .copyright {
@@ -685,4 +683,8 @@ height: 130px;
   opacity: 0.7;
 }
 
+body { 
+  overflow-y: auto !important;
+  padding-right: 0 !important;
+}
 /*---------------------------------------end footer--------------------------------------------*/

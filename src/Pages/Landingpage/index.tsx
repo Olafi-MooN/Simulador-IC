@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Router, useNavigate} from 'react-router-dom';
 
 const LandingPage = () => {
-    const closeLogin = () => {
-        document.querySelector(".modal-backdrop")?.classList.remove("show");
-        document.querySelector(".modal-backdrop")?.classList.remove("modal-backdrop");
+    let navigate = useNavigate();
+    const handleLogin = () => {
+        navigate("/home");
     }
     return <>
 
         {/* navbar */}
         <header className="landingpage-nav d-flex justify-content-between align-items-center">
             <h2 className="logo font-white">Simulador - IC</h2>
-            <button id="show-login" type="button" className="btn btn-light btn-login" data-bs-toggle="modal"  data-bs-target="#exampleModalCenter">Entrar</button>
-
+            <button id="show-login" type="button" className="btn btn-light btn-login m-2" data-bs-toggle="modal"  data-bs-target="#exampleModalCenter">Entrar</button>
         </header>
         {/* end navbar */}
 
@@ -163,7 +162,7 @@ const LandingPage = () => {
                 <div className="modal-content">
                     <div className="container-popup active" data-aos="zoom-in">
                         <div className="box-login active">
-                            <a href="#" className="bi bi-x" data-dismiss="modal"></a>
+                            <a href="#" className="bi bi-x" data-bs-dismiss="modal"></a>
                             <p className="title-box-login">Simulador - IC</p>
                             <p className="subtitle-box-login">Faça Login usando seu e-mail:</p>
                             <form className="form-login d-flex flex-column align-items-center">
@@ -176,7 +175,7 @@ const LandingPage = () => {
                                     <input type="password" className="form-control" id="password" />
                                     <a id="" className="link-ca-small" href="#">Esqueci minha senha.</a>
                                 </div>
-                                <Link to="home" onClick={() => closeLogin()}><button className="btn btn-primary btn-login">Login</button></Link>
+                                <button className="btn btn-primary btn-login" data-bs-dismiss="modal" onClick={handleLogin}>Login</button>
                                 <Link className="link-ca" to="/home">Ainda não possuo uma conta</Link>
                             </form>
                         </div>
