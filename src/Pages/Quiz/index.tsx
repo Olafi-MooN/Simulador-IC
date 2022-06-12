@@ -42,6 +42,7 @@ const Quiz = () => {
             </nav>
         </header>
 
+
         {/* <!-- title and back btn--> */}
         <div className="top-case row gx-0 align-items-center">
             <Link className="col-1 btn back-btn" to="/home" role="button"><i className="bi bi-arrow-left-circle"></i></Link>
