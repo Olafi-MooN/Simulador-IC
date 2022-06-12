@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Quiz = () => {
     return <>
@@ -41,9 +42,10 @@ const Quiz = () => {
             </nav>
         </header>
 
+
         {/* <!-- title and back btn--> */}
         <div className="top-case row gx-0 align-items-center">
-            <a className="col-1 btn back-btn" href="#" role="button"><i className="bi bi-arrow-left-circle"></i></a>
+            <Link className="col-1 btn back-btn" to="/home" role="button"><i className="bi bi-arrow-left-circle"></i></Link>
             <h1 className="main-title col-10">"Doutor, estou com muita dor nas costas"</h1>
             <div className="col-1"></div>
         </div>
