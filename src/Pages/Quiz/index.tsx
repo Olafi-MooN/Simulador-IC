@@ -53,12 +53,12 @@ const Quiz = () => {
         </div>
 
         {/* <!-- main --> */}
-        <main className="row main-row gx-0">
+        <main className="row gx-0">
 
             {/* <!-- cards --> */}
 
             {/* <!-- dados do paciente--> */}
-            <div className="col-12 col-lg-7 main-quiz-row">
+            <div className="col-12 col-md-7 main-quiz-row">
                 <section className="card-main" id="dados-do-paciente">
                     <h2 className="title">Dados do Paciente</h2>
                     <div className="content d-flex justify-content-between align-items-center">
@@ -122,16 +122,23 @@ const Quiz = () => {
                     </div>
                 </section>
             </div>
-            <div className="col-12 col-lg-1"></div>
 
             {/* <!-- Accordion --> */}
 
-            <div className="col-12 col-lg-4">
-                <AccordionQuizMain title="Ánalise inicial">
-                    <AccordionQuizContent title="Há quanto tempo está assim?" response="Estou assim a 10 dia"/>
-                </AccordionQuizMain>
-
-            </div>
+                <div className="col-12 col-md-5 main-quiz-row mt-4 ">
+                    <AccordionQuizMain id="df" title="Ánalise inicial">
+                        <AccordionQuizContent id="aes" title="Há quanto temspo estáds assim?" response="Estou assim a 10 dia"/>
+                        <AccordionQuizContent id="aes" title="Há quanto texmpo estáds assim?" response="Estou assim a 10 dia"/>
+                        <AccordionQuizContent id="ars" title="Há quanto temcpo estáds assim?" response="Estou assim a 10 dia"/>
+                        <AccordionQuizContent id="afes" title="Há quanto tecmpo estáds assim?" response="Estou assim a 10 dia"/>
+                    </AccordionQuizMain>
+                    <AccordionQuizMain id="sdf" title="Ánalise inicidal">
+                        <AccordionQuizContent id="ab" title="Há quanto tempo estádf assim?" response="Estou assim a 10 dia"/>
+                    </AccordionQuizMain>
+                    <AccordionQuizMain id="dsf"title="Ánalise inicidal">
+                        <AccordionQuizContent id="ad" title="Há quanto tempo estsá assim?" response="Estou assim a 10 dia"/>
+                    </AccordionQuizMain>
+                </div>
         </main>
 
         {/* <!-- footer --> */}
