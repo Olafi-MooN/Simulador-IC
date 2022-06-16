@@ -2,10 +2,45 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { AccordionQuizContent } from '../../Components/AccordionQuizContent';
 import { AccordionQuizMain } from '../../Components/AccordionQuizMain';
+import { ICasosModel } from '../../models/ICasosModel';
 
 const Quiz = () => {
+    const caseList = [
+        {
+            id: 1, 
+            title: 'Análise inicial',
+            quiz: [
+                {id: 1, question: 'Há quanto tempo está assim?', response: 'Estou assim a 10 dias.'}
+            ] 
+        },
+        {
+            id: 2, 
+            title: 'Exames Físicos',
+            quiz: [
+                {id: 3, question: 'Sinais vitais (Monitoramento)', response: 'Sinais vitais (Monitoramento)'},
+                {id: 4, question: 'Ectoscopia', response: 'Sinais vitais (Monitoramento)'},
+                {id: 5, question: 'Oroscopia', response: 'Sinais vitais (Monitoramento)'}
+            ] 
+        },
+        {
+            id: 3, 
+            title: 'Exames Complementares',
+            quiz: [
+                {id: 6, question: 'PCR', response: 'Estou assim a 10 dias.'},
+                {id: 7, question: 'Íons', response: 'Estou assim a 10 dias.'},
+                {id: 8, question: 'Hemograma', response: 'Estou assim a 10 dias.'},
+            ] 
+        },
+        {
+            id: 4, 
+            title: 'Conduta',
+            quiz: [
+                {id: 1, question: 'Internação hospitalar', response: 'Estou assim a 10 dias.'}
+            ] 
+        },
+    ] as ICasosModel[];
+    
     return <>
-
         {/* <!--Navbar--> */}
         <header>
             <nav className="navbar navbar-dark navbar-expand-lg">
@@ -53,7 +88,7 @@ const Quiz = () => {
         </div>
 
         {/* <!-- main --> */}
-        <main className="row gx-0">
+        <main className="row gx-0 p-4">
 
             {/* <!-- cards --> */}
 
@@ -126,18 +161,15 @@ const Quiz = () => {
             {/* <!-- Accordion --> */}
 
                 <div className="col-12 col-md-5 main-quiz-row mt-4 ">
-                    <AccordionQuizMain id="df" title="Ánalise inicial">
-                        <AccordionQuizContent id="aes" title="Há quanto temspo estáds assim?" response="Estou assim a 10 dia"/>
-                        <AccordionQuizContent id="aes" title="Há quanto texmpo estáds assim?" response="Estou assim a 10 dia"/>
-                        <AccordionQuizContent id="ars" title="Há quanto temcpo estáds assim?" response="Estou assim a 10 dia"/>
-                        <AccordionQuizContent id="afes" title="Há quanto tecmpo estáds assim?" response="Estou assim a 10 dia"/>
-                    </AccordionQuizMain>
-                    <AccordionQuizMain id="sdf" title="Ánalise inicidal">
-                        <AccordionQuizContent id="ab" title="Há quanto tempo estádf assim?" response="Estou assim a 10 dia"/>
-                    </AccordionQuizMain>
-                    <AccordionQuizMain id="dsf"title="Ánalise inicidal">
-                        <AccordionQuizContent id="ad" title="Há quanto tempo estsá assim?" response="Estou assim a 10 dia"/>
-                    </AccordionQuizMain>
+                    <div className="quiz-section p-2 mt-2">
+                    {caseList.map(item => { 
+                        return <>
+                        <AccordionQuizMain key={item.id} id={"quiz-main"+String(item.id)} title={item.title}>
+                            {item.quiz.map(quiz => <AccordionQuizContent id={quiz.id} title={quiz.question} response={quiz.response}/>)}
+                        </AccordionQuizMain>
+                        </>
+                    })}
+                    </div>
                 </div>
         </main>
 
