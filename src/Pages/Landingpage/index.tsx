@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Router, useNavigate} from 'react-router-dom';
+import { Link, Router, useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
     let navigate = useNavigate();
@@ -11,7 +11,7 @@ const LandingPage = () => {
         {/* navbar */}
         <header className="landingpage-nav d-flex justify-content-between align-items-center">
             <h2 className="logo font-white">Simulador - IC</h2>
-            <button id="show-login" type="button" className="btn btn-light btn-login m-2" data-bs-toggle="modal"  data-bs-target="#exampleModalCenter">Entrar</button>
+            <button id="show-login" type="button" className="btn btn-light btn-login m-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Entrar</button>
         </header>
         {/* end navbar */}
 
@@ -92,62 +92,74 @@ const LandingPage = () => {
         {/* end create account form adn description*/}
 
         {/* body text one column */}
-        <div className="text-one">
-            <h2 className="title">Lorem ipsum dolor</h2>
-            <p className="text">Aenean fermentum urna sapien, hendrerit interdum velit egestas quis. Nullam ut justo
-                sed nibh imperdiet fermentum sed sed tortor.
-                <br /><br />
-                Etiam aliquet facilisis luctus. Praesent ac semper tellus. Proin efficitur sed lacus a malesuada.
-                Integer sed laoreet neque. In in erat imperdiet, viverra nisl in, feugiat dui. Nam aliquam augue mi,
-                tristique malesuada metus imperdiet ut. Vivamus aliquet eros lacus, hendrerit luctus ligula mattis
-                sit
-                amet. Fusce ultricies auctor nisi, eget
-                <br /><br />
-                Ut in accumsan nibh, ac interdum massa. Phasellus et viverra justo. Aliquam vitae eleifend velit.
-                <br /><br />
-                Mauris non pretium odio. Vivamus semper, lectus et tempus laoreet, libero nisl lacinia velit, ut
-                venenatis ipsum leo quis nisl. Ut in accumsan nibh, ac interdum massa. Phasellus et viverra justo.
-                Aliquam vitae eleifend velit.Mauris non pretium odio. Vivamus semper, lectus et tempus laoreet,
-                libero nisl lacinia velit, ut venenatis ipsum leo quis nisl. Ut in accumsan nibh, ac interdum massa.
-                Phasellus et viverra justo. Aliquam vitae eleifend velit.
-                <br /><br />
-                Mauris non pretium odio. Vivamus semper, lectus et tempus laoreet, libero nisl lacinia velit, ut
-                venenatis ipsum leo quis nisl. Ut in accumsan nibh, ac interdum massa. Phasellus et viverra justo.
-                Aliquam vitae eleifend velit.
-            </p>
+        <div className="text-container" id='text-one'>
+            <div className="row">
+                <div className="col-12 col-md-7 d-flex align-items-center">
+                    <div className="container">
+                        <h2 className="title">Lorem ipsum dolor</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+                            consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
+                            tincidunt augue. In molestie velit vel lorem convallis
+                            tempus.
+                            <br /><br />
+                            Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
+                            magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
+                            odio.
+                        </p>
+                    </div>
+                </div>
+                <div className="col-12 col-md-5 img-col">
+                    <img className='img-fluid' src="img/medicine1.svg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div className="text-container" id='text-two'>
+            <div className="row">
+                <div className="col-12 col-md-5 img-col">
+                    <img className='img-fluid' src="img/medicine2.svg" alt="" />
+                </div>
+                <div className="col-12 col-md-7 d-flex align-items-center">
+                    <div className="container">
+                        <h2 className="title">Lorem ipsum dolor</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+                            consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
+                            tincidunt augue. In molestie velit vel lorem convallis
+                            tempus.
+                            <br /><br />
+                            Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
+                            magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
+                            odio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="text-container" id='text-three'>
+            <div className="row">
+                <div className="col-12 col-md-7 d-flex align-items-center">
+                    <div className="container">
+                        <h2 className="title">Lorem ipsum dolor</h2>
+                        <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
+                            consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
+                            tincidunt augue. In molestie velit vel lorem convallis
+                            tempus.
+                            <br /><br />
+                            Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
+                            magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
+                            odio.
+                        </p>
+                    </div>
+                </div>
+                <div className="col-12 col-md-5 img-col">
+                    <img className='img-fluid' src="img/medicine4.svg" alt="" />
+                </div>
+            </div>
         </div>
         {/* end body text one column */}
 
-        {/* body text two column */}
-        <div className="row d-flex align-items-center justify-content-center gx-0">
-            <div className="text-two col-12 col-md-6">
-                <h2 className="title">Lorem ipsum dolor</h2>
-                <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                    consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                    tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.
-                    <br /><br />
-                    Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
-                    magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
-                    odio.
-                </p>
-            </div>
-            <div className="text-two col-1 col-12 col-md-6">
-                <h2 className="title">Lorem ipsum dolor</h2>
-                <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                    consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                    tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.
-                    <br /><br />
-                    Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
-                    magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
-                    odio.
-                </p>
-            </div>
-        </div>
-        {/* end body text two column */}
 
         {/* create account call */}
         <div className="paragraph-create-account d-flex align-items-center flex-column">
