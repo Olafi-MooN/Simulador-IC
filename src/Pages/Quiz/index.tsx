@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { api } from '../../Api';
 import { AccordionQuizContent } from '../../Components/AccordionQuizContent';
 import { AccordionQuizMain } from '../../Components/AccordionQuizMain';
 import { ICasosModel } from '../../models/ICasosModel';
@@ -39,6 +40,11 @@ const Quiz = () => {
             ] 
         },
     ] as ICasosModel[];
+
+    useEffect(() => { 
+        api.get("").then(res => console.log(res));
+        console.log(import.meta.env.VITE_URL);
+    }, [])
     
     return <>
 
