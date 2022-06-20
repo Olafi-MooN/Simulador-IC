@@ -36,7 +36,7 @@ const Quiz = () => {
             id: 4, 
             title: 'Conduta',
             quiz: [
-                {id: 1, question: 'Internação hospitalar', response: 'Estou assim a 10 dias.'}
+                {id: 10, question: 'Internação hospitalar', response: 'Estou assim a 10 dias.'}
             ] 
         },
     ] as ICasosModel[];

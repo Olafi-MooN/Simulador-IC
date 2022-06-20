@@ -14,18 +14,18 @@ const Navbar = (props: any) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link select-color" href="index.html">Home</a>
+              <Link className="nav-link select-color" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="">Estatísticas</a>
+              <Link className="nav-link" to="/">Estatísticas</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="">Sobre</a>
+              <Link className="nav-link" to="/">Sobre</Link>
             </li>
           </ul>
           <ul className="navbar-nav">
             <div className="nav-item d-flex">
-              <img className="img-fluid" src="img/profile.jpg" alt="" id="profile-mini" />
+              <img className="img-fluid" src="/img/profile.jpg" alt="" id="profile-mini" />
               <li className="nav-item dropdown dropdown-menu-end dropdown-menu-lg-start">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,8 +33,8 @@ const Navbar = (props: any) => {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                   aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><Link className="dropdown-item" to="profile/edit">Perfil</Link></li>
-                  <li><a className="dropdown-item log-out" href="">Sair</a>
+                  <li><Link className="dropdown-item" to="profile">Perfil</Link></li>
+                  <li><Link className="dropdown-item log-out" to="/">Sair</Link>
                   </li>
                 </ul>
               </li>
