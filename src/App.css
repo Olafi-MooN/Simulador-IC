@@ -36,40 +36,40 @@ a {
   color: var(--color-black);
 }
 
-.btn-1{
-    background-color: var(--color-blue);
-    border-color: var(--color-blue);
-    color: var(--color-white);
+.btn-1 {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
 }
 
-.btn-1:hover{
-    background-color: var(--color-blue-hover);
-    border-color: var(--color-blue-hover);
-    color: var(--color-white);
+.btn-1:hover {
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
+  color: var(--color-white);
 }
 
-.btn-2{
-    background-color: var(--color-white);
-    border-color: var(--color-white);
-    color: var(--color-blue);
+.btn-2 {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-blue);
 }
 
-.btn-2:hover{
-    background-color: var(--color-blue);
-    border-color: var(--color-blue);
-    color: var(--color-white);
+.btn-2:hover {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
 }
 
-.btn-3{
-    background-color: red;
-    border-color: red;
-    color: var(--color-white);
+.btn-3 {
+  background-color: red;
+  border-color: red;
+  color: var(--color-white);
 }
 
-.btn-3:hover{
-    background-color: rgb(190, 10, 10);
-    border-color: rgb(190, 10, 10);
-    color: var(--color-white);
+.btn-3:hover {
+  background-color: rgb(190, 10, 10);
+  border-color: rgb(190, 10, 10);
+  color: var(--color-white);
 }
 
 h1 {
@@ -257,7 +257,7 @@ ul {
   font-weight: 500;
 }
 
-.text-container .img-fluid{
+.text-container .img-fluid {
   padding: 60px;
 }
 
@@ -717,6 +717,7 @@ body {
   overflow-y: auto !important;
   padding-right: 0 !important;
 }
+
 /*---------------------------------------end footer--------------------------------------------*/
 
 .accordion-button:not(.collapsed) {
@@ -728,13 +729,13 @@ body {
 }
 
 .accordion-button:focus {
-  outline:none;
-  box-shadow:none;
+  outline: none;
+  box-shadow: none;
   border: none;
 }
 
-.quiz-section { 
-  background-color:white;
+.quiz-section {
+  background-color: white;
   border-radius: 12px;
 }
 
@@ -784,11 +785,11 @@ body {
 
 @media(max-width: 990px) {
   #profile-mini {
-      width: 0;
-      height: 0;
-      border: none;
-      margin: 0;
-      padding: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -796,7 +797,7 @@ body {
 
 /*---------------------------------------end navbar--------------------------------------------*/
 
-/*---------------------------------------profile row--------------------------------------------*/
+/*---------------------------------------profile--------------------------------------------*/
 
 #profile.row {
   background-color: var(--color-white);
@@ -817,14 +818,25 @@ body {
 
 }
 
+
 #profile .basic-info {
   position: relative;
   top: -50px;
   text-align: center;
 }
 
+#profile .name {
+  color: var(--color-blue);
+}
+
 #profile #since {
   font-size: 13px;
+}
+
+#profile .title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--color-blue);
 }
 
 #profile .login-info,
@@ -851,8 +863,31 @@ body {
   width: 100%;
 }
 
-#profile .btn{
+#profile .btn {
   margin-right: 20px;
 }
 
-/*---------------------------------------end profile row--------------------------------------------*/
+#profile .form-control {
+  width: 700px;
+}
+
+@media(max-width: 990px) {
+  #profile .form-control {
+    width: 320px;
+  }
+  #profile.row{
+    margin: 100px 10px 30px 10px;
+  }
+}
+
+@media(max-width: 360px) {
+  #profile .form-control {
+    width: 280px;
+  }
+}
+
+
+
+
+
+/*---------------------------------------end profile--------------------------------------------*/

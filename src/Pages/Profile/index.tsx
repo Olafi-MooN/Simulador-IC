@@ -24,10 +24,10 @@ const Profile = () => {
                     <p id="since">Usuario(a) desde: jun/2022</p>
                 </div>
             </div>
-            <div className="col-11 d-flex justify-content-center">
-                <div className="login-info">
-                    <h2>Dados de Login</h2>
-                    <form>
+            <div className="col-11 d-flex flex-column">
+                <h2 className="title">Dados de Login</h2>
+                <div className="login-info d-flex justify-content-center">
+                    <form className="">
                         <div className="mb-3">
                             <label htmlFor="username" className="form-label"><i className="bi bi-person-fill"></i>Login</label>
                             <input type="text" className="form-control" id="username" aria-describedby="usernamehelp"
@@ -44,9 +44,9 @@ const Profile = () => {
                     </form>
                 </div>
             </div>
-            <div className="col-11 d-flex justify-content-center">
-                <div className="personal-info">
-                    <h2>Dados Pessoais</h2>
+            <div className="col-11 d-flex flex-column">
+                <h2 className="title">Dados Pessoais</h2>
+                <div className="personal-info d-flex justify-content-center">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="fullname" className="form-label"><i className="bi bi-person-lines-fill"></i>Nome
@@ -78,7 +78,7 @@ const Profile = () => {
             </div>
             <div className="col-11 d-flex justify-content-center">
                 <div className="btns d-flex flex-row-reverse">
-                    <a className="btn btn-primary btn-3" href="#" role="button">Logout</a>
+                    <a className="btn btn-primary btn-3 d-flex align-items-center" href="#" id="logout" role="button">Logout</a>
                     <Link className="btn btn-primary btn-1" to="profile/edit" role="button">Editar Informações</Link>
                 </div>
             </div>
