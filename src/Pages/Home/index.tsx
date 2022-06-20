@@ -87,7 +87,7 @@ const Home = () => {
     <footer className="footer">
       {/* title and social icons */}
       <div className="header-footer d-flex justify-content-between">
-        <h2 className="title font-white">Simulador - IC</h2>
+        <h2 className="title font-white">MedSim</h2>
         <div className="social-icons">
           <div className="social-icons">
             <a href="#" className="bi bi-instagram social-icon"></a>
@@ -136,7 +136,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <h4 className="copyright">©Simulador - IC 2022 Todos os direitos reservados.</h4>
+        <h4 className="copyright">©MedSim 2022 Todos os direitos reservados.</h4>
       </div>
       {/* end links and copyright */}
 

@@ -5,7 +5,7 @@ const Navbar = (props: any) => {
   return <>
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand navbar-title" to="/home">MedSim</Link>
+        <Link className="navbar-brand navbar-title" to="/home"> <img src="/img/logo.png" className='img-fluid logo' width={120}></img></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -34,7 +34,7 @@ const Navbar = (props: any) => {
                 <ul className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                   aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><Link className="dropdown-item" to="profile/edit">Perfil</Link></li>
-                  <li><a className="dropdown-item log-out" href="">Sair</a>
+                  <li><Link className="dropdown-item log-out" to="/">Sair</Link>
                   </li>
                 </ul>
               </li>

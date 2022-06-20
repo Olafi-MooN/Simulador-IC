@@ -10,7 +10,7 @@ const LandingPage = () => {
 
         {/* navbar */}
         <header className="landingpage-nav d-flex justify-content-between align-items-center">
-            <h2 className="logo font-white">Simulador - IC</h2>
+            <img src="/img/logo.png" className='img-fluid logo' width={150}></img>
             <button id="show-login" type="button" className="btn btn-light btn-login m-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Entrar</button>
         </header>
         {/* end navbar */}
@@ -18,7 +18,7 @@ const LandingPage = () => {
         {/* header */}
         <div className="header d-flex justify-content-between">
             <div className="header-text" data-aos="fade-up">
-                <h1 className="header-title font-white">Simulador - IC</h1>
+                <h1 className="header-title font-white">MedSim - Simulador de Casos Clínicos</h1>
                 <h3 className="font-white">
                     Proin volutpat, ex eu euismod pharetra, quam risus consequat libero, sit amet bibendum ipsum velit
                     vitae
@@ -44,7 +44,7 @@ const LandingPage = () => {
             {/* create account form */}
             <div className="col-12 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-easing="ease-in-sine">
                 <div className="create-account">
-                    <h2 className="title">Simulador - IC</h2>
+                    <h2 className="title">MedSim</h2>
                     <h3 className="subtitle">Crie uma conta usando seu e-mail:</h3>
                     <form className="create-account-form d-flex flex-column align-items-center">
                         <div className="mb-3">
@@ -175,7 +175,7 @@ const LandingPage = () => {
                     <div className="container-popup active" data-aos="zoom-in">
                         <div className="box-login active">
                             <a href="#" className="bi bi-x" data-bs-dismiss="modal"></a>
-                            <p className="title-box-login">Simulador - IC</p>
+                            <p className="title-box-login">MedSim</p>
                             <p className="subtitle-box-login">Faça Login usando seu e-mail:</p>
                             <form className="form-login d-flex flex-column align-items-center">
                                 <div className="mb-3 d-flex flex-column">

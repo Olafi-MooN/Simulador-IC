@@ -139,7 +139,7 @@ const Quiz = () => {
         <footer className="footer">
             {/* <!-- title and social icons --> */}
             <div className="container-top d-flex justify-content-between">
-                <h2 className="title">Simulador - IC</h2>
+                <h2 className="title">MedSim</h2>
                 <div className="social-icons">
                     <div className="social-icons">
                         <a href="#" className="bi bi-instagram social-icon"></a>
@@ -187,7 +187,7 @@ const Quiz = () => {
                         </ul>
                     </div>
                 </div>
-                <h4 className="copyright">©Simulador - IC 2022 Todos os direitos reservados.</h4>
+                <h4 className="copyright">©MedSim 2022 Todos os direitos reservados.</h4>
             </div>
         </footer>
     </>
