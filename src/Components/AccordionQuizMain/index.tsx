@@ -8,7 +8,7 @@ export interface IAccordionQuizMainModel {
 
 const AccordionQuizMain: React.FC<IAccordionQuizMainModel> = ({title, id, children}) => {
     return <>
-        <section className="accordion-action m-2">
+        <section className="accordion-action m-0 p-0">
             <div className="accordion accordion-flush" id={title.replace("?", "")}>
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingOne">

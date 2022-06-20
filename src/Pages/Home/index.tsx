@@ -7,45 +7,6 @@ const Home = () => {
   ];
 
   return <>
-
-    {/* navbar (search comming soon) */}
-    <header>
-      <nav className="navbar navbar-dark navbar-expand-lg">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">Simulador - IC</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse row" id="navbarNavAltMarkup">
-            <div className="navbar-nav col-12 col-lg-3">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-              <a className="nav-link" href="#">Estatisticas</a>
-              <a className="nav-link" href="#">Sobre</a>
-            </div>
-            <div className="col-12 col-lg-7"></div>
-            <ul className="navbar-nav nav-bar-profile col-12 col-lg-2" id="profile">
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  João_Vitor
-                </a>
-                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">Perfil</a></li>
-                  <li><a className="dropdown-item" href="#">Modo noturno (Em breve)</a></li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li><a className="dropdown-item" href="#">Sair</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    {/* end navbar */}
-
     {/* title */}
     <h1 className="home-title">Dashboard</h1>
     {/* end title */}

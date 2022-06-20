@@ -1,34 +1,24 @@
 import React from "react";
+import "./AccordionQuizContent.css";
 
 export interface IAccordionQuizContentModel {
     title: string;
     response: string;
-    id:any;
+    id: any;
 }
 
-const AccordionQuizContent: React.FC<IAccordionQuizContentModel> = ({title,response, id}) => {
+const AccordionQuizContent: React.FC<IAccordionQuizContentModel> = ({ title, response, id }) => {
     return <>
-        <section className="accordion-action m-0 p-0">
-            <div className="accordion accordion-flush" id={title.replace("?", "")+id}>
-                <div className="accordion-item">
-                    <h2 className="accordion-header" id={title.replace("?", "")+id+"labelledby"}>
-                        <button className="accordion-button collapsed title-questions" type="button"
-                            data-bs-toggle="collapse" data-bs-target={"#"+id} aria-expanded="false"
-                            aria-controls={id}>
-                            <p className="questions">{title}</p>
-                        </button>
-                    </h2>
-                    <div id={id} className="accordion-collapse collapse"
-                        aria-labelledby={title.replace("?", "")+id+"labelledby"} data-bs-parent={"#"+title.replace("?", "")+id}>
-                        <ul className="list-group list-group-flush accordion-body">
-                            <li className="list-group-item">
-                                {response}
-                            </li>
-                        </ul>
-                    </div>
+        <button className="button-accordion-quiz-content px-4" type="button" data-bs-toggle="collapse" data-bs-target={"#collapseWidthExample" + id} aria-expanded="false" aria-controls={"collapseWidthExample" + id}>
+            {title}
+        </button>
+        <div>
+            <div className="collapse" id={"collapseWidthExample" + id}>
+                <div className="description-accordion-quiz-content px-4">
+                    {response}
                 </div>
             </div>
-        </section>
+        </div>
     </>
 }
 
